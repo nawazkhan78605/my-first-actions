@@ -1,0 +1,11 @@
+name: My first workflow
+on: workflow_dispatch
+jobs:
+  firstjob:
+    runs-on: ubuntu latest
+    steps:
+      - name: Print Elixr Employee name
+        run: echo "Welcome Nawaz khan"
+      - name: Role of Employee
+        run: echo "DevOps Engineer"
+      
