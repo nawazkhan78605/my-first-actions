@@ -1,5 +1,5 @@
 name: My first workflow
-on: [push, workflow_dispatch]
+on: workflow_dispatch
 jobs:
   firstjob:
     runs-on: ubuntu-latest
@@ -8,4 +8,11 @@ jobs:
         run: echo "Welcome Nawaz khan"
       - name: Role of Employee
         run: echo "DevOps Engineer"
+  secondjob:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Introduce your self
+        run: echo "Hello I'm Nawaz"
+    
+    
       
