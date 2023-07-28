@@ -9,6 +9,7 @@ jobs:
       - name: Role of Employee
         run: echo "DevOps Engineer"
   secondjob:
+    needs: firstjob
     runs-on: ubuntu-latest
     steps:
       - name: Introduce your self
