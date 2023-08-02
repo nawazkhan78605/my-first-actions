@@ -1,10 +1,12 @@
 name: output information
 on: workflow_dispatch
+env:
+  DEVOPS_ENGINEER_NAME: ${{ secrets.DEVOPS_ENGINEER_NAME }}
 jobs:
   infor:
     runs-on: ubuntu-latest
     steps:
       - name: Output Github context
         run: echo "${{ toJSON(github) }}"
-      - name: Output event nmae
-        run: echo $GITHUB_ACTOR
+      - name: Output Engineer name
+        run: echo $DEVOPS_ENGINEER_NAME
